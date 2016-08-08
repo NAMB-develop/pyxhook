@@ -322,7 +322,7 @@ class pyxhookkeyevent:
         self.MessageName = MessageName
     
     def __str__(self):
-        return "Window Handle: " + str(self.Window) + "\nWindow Name: " + str(self.WindowName) + "\nWindow's Process Name: " + str(self.WindowProcName) + "\nKey Pressed: " + str(self.Key) + "\nAscii Value: " + str(self.Ascii) + "\nKeyID: " + str(self.KeyID) + "\nScanCode: " + str(self.ScanCode) + "\nMessageName: " + str(self.MessageName) + "\n"
+        return "Window Handle: " + str(self.Window) + "\nWindow Name: " + repr(self.WindowName) + "\nWindow's Process Name: " + str(self.WindowProcName) + "\nKey Pressed: " + str(self.Key) + "\nAscii Value: " + str(self.Ascii) + "\nKeyID: " + str(self.KeyID) + "\nScanCode: " + str(self.ScanCode) + "\nMessageName: " + str(self.MessageName) + "\n"
 
 class pyxhookmouseevent:
     """This is the class that is returned with each key event.f
@@ -343,7 +343,7 @@ class pyxhookmouseevent:
         self.MessageName = MessageName
     
     def __str__(self):
-        return "Window Handle: " + str(self.Window) + "\nWindow Name: " + str(self.WindowName) + "\nWindow's Process Name: " + str(self.WindowProcName) + "\nPosition: " + str(self.Position) + "\nMessageName: " + str(self.MessageName) + "\n"
+        return "Window Handle: " + str(self.Window) + "\nWindow Name: " + repr(self.WindowName) + "\nWindow's Process Name: " + str(self.WindowProcName) + "\nPosition: " + str(self.Position) + "\nMessageName: " + str(self.MessageName) + "\n"
 
 #######################################################################
 #########################END CLASS DEF#################################
